@@ -17,4 +17,5 @@ def get_company_metrics(ticker_num, ticker_data):
     columns = ['ticker', 'dividendRate', 'dividendYield', 'fiveYearAvgDividendYield', 'payoutRatio', 'MarketCap', 'totalRevenue', 'ROE']
     df_company_metrics = pd.DataFrame(data=[company_metrics], columns=columns)
 
+    
     return df_company_metrics
