@@ -23,7 +23,7 @@ for commodity in commodities:
 
 plt.xlabel('Date')
 plt.ylabel('Performance (%)')
-plt.title('Commodities Performance in 2024')
+plt.title('Commodities Performance')
 plt.legend()
 plt.grid(True)
 plt.show()
