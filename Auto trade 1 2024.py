@@ -75,3 +75,5 @@ class TradingBot:
             except Exception as e:
                 print(f"エラー: {e}")
                 time.sleep(10)
+
+
