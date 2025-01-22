@@ -82,6 +82,7 @@ for i, (symbol, name) in enumerate(symbols_with_names.items()):
         color=color
     )
 
+
 plt.xlabel('Date')
 plt.ylabel('Performance (%)')
 plt.title('Stock Performance')
