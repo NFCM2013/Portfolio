@@ -13,7 +13,7 @@ symbols_with_names = {
     '3231.T': 'Nomura Real Estate',
     '4373.T': 'Simplex Holdings, Inc.',
     '4528.T': 'Ono Pharmaceutical Co., Ltd.',
-    '4966.T': 'C.Uyemura Co., Ltd.',
+    '4966.T': 'Uemura Co., Ltd.',
     '5423.T': 'Tokyo Steel Manufacturing Co., Ltd.',
     '6013.T': 'Takuma Co., Ltd.',
     '6080.T': 'M&A Capital Partners Co., Ltd.',
