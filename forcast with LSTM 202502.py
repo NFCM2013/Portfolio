@@ -24,7 +24,7 @@ def download_data(ticker, start_date, end_date):
     except Exception as e:
         raise RuntimeError(f"データのダウンロード中にエラーが発生しました: {e}")
 
-def preprocess_data(data, column='Close'):  # 'Adj Close' を 'Close' に変更
+def preprocess_data(data, column='Close'):
     prices = data[column].dropna().values.reshape(-1, 1)
     scaler = MinMaxScaler(feature_range=(0, 1))
     scaled_data = scaler.fit_transform(prices)
@@ -73,8 +73,8 @@ def main():
     # データ前処理
     scaled_data, scaler = preprocess_data(data)
 
-    # トレーニングデータとテストデータの分割 (80%を訓練データに)
-    train_size = int(len(scaled_data) * 0.8)  # `任意` を `0.8` に変更
+    # トレーニングデータとテストデータの分割 (70%を訓練データに)
+    train_size = int(len(scaled_data) * 0.7)  # `0.7` に変更
     train_data = scaled_data[:train_size]
     test_data = scaled_data[train_size:]
 
